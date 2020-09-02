@@ -1,0 +1,296 @@
+body{
+    font-family: 'Roboto',sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar{
+
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #042331;
+    transition: all .5s ease;
+
+   
+
+}
+
+.sidebar header{
+    font-size: 25px;
+    color: white;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+    height: 150px;
+}
+
+#image-logo{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 50%;
+    top: 10px;
+    left: 20px;
+}
+
+#title{
+    position: absolute;
+    top: -10px;
+    padding-left: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#All-subjects{
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+    padding-left: 30px;
+    font-size: 17px;
+}
+
+#join-button{
+
+    margin-left: 60px;
+    width: 130px;
+    height: 30px;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: tomato;
+    transition: .3s ease;
+    cursor: pointer;
+    outline: none;
+
+}
+
+#join-button:hover{
+    background-color: white;
+    color: tomato;
+}
+
+#share-icon{
+    
+    position: relative;
+    top: 8px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+}
+
+.sidebar ul a{
+
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .3s ;
+}
+
+ul li:hover a{
+    padding-left: 40px;
+}
+
+.sidebar ul a i {
+    margin-right: 15px;
+}
+
+#check{
+    display: none;
+}
+
+label #btn , label #cancel {
+
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+
+}
+
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 30px;
+    color: white;
+    padding: 6px 12px;
+    transition: .5s ease-in-out;
+}
+
+label #cancel{
+     z-index: 1111;
+     left: -205px;
+     top: 20px;
+     font-size: 20px ;
+     color: #0a5275 ;
+     padding: 4px 9px;
+     transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+
+} 
+
+#check:checked ~ label #cancel{
+
+    left: 205px;
+    
+
+} 
+
+section{
+    background: url('https://ch20webmaster.com/wp-content/uploads/2018/01/Wallpaper-Full-HD-Ch33u.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    transition: all 0.5s ease;
+
+    /* padding-top: 50px; */
+
+   
+}
+
+#check:checked ~ section{
+
+    margin-left: 250px;
+
+}
+
+.container{
+   
+    padding-top: 50px;
+    margin-left: 150px;
+    
+}
+
+.section-div{
+    width: 85vh;
+    height: 100%;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    padding: 20px;
+
+}
+.Container-btn{
+    
+    position: relative;
+    left: 43vh;
+    margin-bottom: 5px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 3px;
+    background-color: tomato;
+    transition: .4s ease;
+}
+
+.Container-btn:hover{
+
+    background-color: white;
+    color: tomato;
+
+}
+
+.section-div .tittle{
+    color: brown;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.section-div .heading{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.left-div{
+    float: left;
+}
+
+.right-div{
+     float: left;
+     margin-left: 20px;
+     width: 50vh;
+    height: 100%;
+   
+
+}
+
+.ideas{
+    
+    width: 45vh ;
+    height: 20vh;
+    background-color: seashell;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+.profile-container{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    overflow-y: auto;
+   
+
+}
+
+.profiles{
+    width: 45vh;
+    height: 100%;
+    padding: 5px;
+    margin: 8px;
+}
+
+.profiles img{
+    float: left;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profiles p{
+    margin-top: 8px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+   
+}
+
+.profiles span{
+    position: relative;
+    top: 5px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px white;
+}

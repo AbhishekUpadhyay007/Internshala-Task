@@ -1,0 +1,30 @@
+<div class="section-div">
+
+    <p class="heading">Test </p> <br>
+    <p class="tittle">Express JS</p><br>
+    <p>Submission deadline: <strong> 11-july 8:00 pm</strong></p>
+    <p>Number of students Appeared: <strong>20</strong> </p><br><br>
+
+    <hr>
+    <br>
+
+    <button class="Container-btn">View Marks</button>
+    <button class="Container-btn">View Exam Sheet</button>
+
+</div>
+
+
+<div class="section-div">
+
+    <p class="heading"> Test</p><br>
+    <p class="tittle">Express JS</p><br>
+    <p>Submission deadline: <strong> 11-july 8:00 pm</strong></p>
+    <p>Number of students Appeared: <strong>20</strong> </p><br><br>
+
+    <hr>
+    <br>
+
+    <button class="Container-btn">View Marks</button>
+    <button class="Container-btn">View Exam Sheet</button>
+
+</div>

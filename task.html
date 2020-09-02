@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+
+   <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+   
+    
+
+    <input type="checkbox" id="check">
+    <label for="check">
+
+        <i class="fas fa-bars" id = "btn"></i>
+        <i class="fas fa-times" id = "cancel"></i>
+
+    </label>
+
+    <div class="sidebar">
+
+        <header>
+
+            <img id="image-logo" src="db.jpg" alt="icon"> 
+            <span id="title"> BSE 1st Sem</span>
+            <span id="All-subjects">All subjects</span>
+
+
+            <span style="font-size: 14px; position: relative; top: 40px; margin-left: 30px;"> By jeet Sir</span>
+            
+           
+            <div class="button-div">
+
+                <button id="join-button">Join Class</button>
+                <svg id="share-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="48" height="48"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g transform="translate(4.73,4.73) scale(0.945,0.945)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g fill="#ffffff" stroke="#6b6b6b" stroke-width="10" stroke-linejoin="round"><path d="M150.5,35.83333c0,11.78924 -9.71076,21.5 -21.5,21.5c-5.24655,0 -10.02287,-1.99129 -13.77344,-5.16504l-51.13249,29.82845c0.24976,1.30055 0.40592,2.63476 0.40592,4.00326c0,1.3685 -0.15617,2.70271 -0.40592,4.00326l51.13249,29.84244c3.75152,-3.17718 8.52371,-5.17903 13.77344,-5.17903c11.78924,0 21.5,9.71076 21.5,21.5c0,11.78924 -9.71076,21.5 -21.5,21.5c-11.78924,0 -21.5,-9.71076 -21.5,-21.5c0,-1.37323 0.15448,-2.71248 0.40593,-4.01725l-51.13249,-29.81445c-3.75057,3.17375 -8.52688,5.16504 -13.77344,5.16504c-11.78924,0 -21.5,-9.71076 -21.5,-21.5c0,-11.78924 9.71076,-21.5 21.5,-21.5c5.24655,0 10.02287,1.99129 13.77344,5.16504l51.13249,-29.82845c-0.24976,-1.30055 -0.40593,-2.63476 -0.40593,-4.00326c0,-11.78924 9.71076,-21.5 21.5,-21.5c11.78924,0 21.5,9.71076 21.5,21.5zM121.83333,35.83333c0,4.04293 3.12374,7.16667 7.16667,7.16667c4.04292,0 7.16667,-3.12374 7.16667,-7.16667c0,-4.04293 -3.12374,-7.16667 -7.16667,-7.16667c-4.04292,0 -7.16667,3.12374 -7.16667,7.16667zM35.83333,86c0,4.04292 3.12374,7.16667 7.16667,7.16667c4.04293,0 7.16667,-3.12374 7.16667,-7.16667c0,-4.04292 -3.12374,-7.16667 -7.16667,-7.16667c-4.04293,0 -7.16667,3.12374 -7.16667,7.16667zM121.83333,136.16667c0,4.04292 3.12374,7.16667 7.16667,7.16667c4.04292,0 7.16667,-3.12374 7.16667,-7.16667c0,-4.04292 -3.12374,-7.16667 -7.16667,-7.16667c-4.04292,0 -7.16667,3.12374 -7.16667,7.16667z"></path></g><path d="M0,172v-172h172v172z" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><g fill="#ffffff" stroke="none" stroke-width="1" stroke-linejoin="miter"><path d="M129,14.33333c-11.78924,0 -21.5,9.71076 -21.5,21.5c0,1.3685 0.15617,2.70271 0.40593,4.00326l-51.13249,29.82845c-3.75057,-3.17375 -8.52688,-5.16504 -13.77344,-5.16504c-11.78924,0 -21.5,9.71076 -21.5,21.5c0,11.78924 9.71076,21.5 21.5,21.5c5.24655,0 10.02287,-1.99129 13.77344,-5.16504l51.13249,29.81445c-0.25145,1.30477 -0.40593,2.64402 -0.40593,4.01725c0,11.78924 9.71076,21.5 21.5,21.5c11.78924,0 21.5,-9.71076 21.5,-21.5c0,-11.78924 -9.71076,-21.5 -21.5,-21.5c-5.24973,0 -10.02192,2.00185 -13.77344,5.17903l-51.13249,-29.84244c0.24976,-1.30055 0.40592,-2.63476 0.40592,-4.00326c0,-1.3685 -0.15617,-2.70271 -0.40592,-4.00326l51.13249,-29.82845c3.75057,3.17375 8.52689,5.16504 13.77344,5.16504c11.78924,0 21.5,-9.71076 21.5,-21.5c0,-11.78924 -9.71076,-21.5 -21.5,-21.5zM129,28.66667c4.04292,0 7.16667,3.12374 7.16667,7.16667c0,4.04293 -3.12374,7.16667 -7.16667,7.16667c-4.04292,0 -7.16667,-3.12374 -7.16667,-7.16667c0,-4.04293 3.12374,-7.16667 7.16667,-7.16667zM43,78.83333c4.04293,0 7.16667,3.12374 7.16667,7.16667c0,4.04292 -3.12374,7.16667 -7.16667,7.16667c-4.04293,0 -7.16667,-3.12374 -7.16667,-7.16667c0,-4.04292 3.12374,-7.16667 7.16667,-7.16667zM129,129c4.04292,0 7.16667,3.12374 7.16667,7.16667c0,4.04292 -3.12374,7.16667 -7.16667,7.16667c-4.04292,0 -7.16667,-3.12374 -7.16667,-7.16667c0,-4.04292 3.12374,-7.16667 7.16667,-7.16667z"></path></g><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path></g></g></svg>
+    
+            </div>
+          
+            <li><a href="#"><i class="fas fs-share"></i></a></li>
+        </header>
+
+        <ul>
+                <li class="click"><a href="#"><i class="fas fa-qrcode"></i>Timeline</a></li>
+
+                <li class="click"><a href="#"><i class="fas fa-calendar-week"></i>Live class</a></li>
+                <li class="click"><a href="#"><i class="fas fa-stream"></i>Notes</a></li>
+                <li id="Assignments"><a href="#"><i class="fas fa-link"></i>Assignments</a></li>
+                <li id="Tests"><a href="#"><i class="fas fa-atom"></i>Tests</a></li>
+                <li class="click"><a href="#"><i class="fas fa-rocket"></i>Contact us</a></li>
+                <li class="click"><a href="#"><i class="fas fa-envelope"></i>Shortcuts</a></li>
+                
+                
+        </ul>
+    </div>
+    
+    <section>
+
+        <div class="container">
+
+            <div class="left-div" id="left-div">
+
+                <div class="section-div">
+
+                    <p class="heading"> Assignment on </p> <br>
+                    <p class="tittle">Express JS</p><br>
+                    <p>Submission deadline: <strong> 11-july 8:00 pm</strong></p>
+                    <p>Total Marks : <strong>20</strong> </p><br><br>
+    
+                    <hr>
+                    <br>
+    
+                    <button class="Container-btn">Download Assignment</button>
+                    <button class="Container-btn">Upload Assignment</button>
+    
+                </div>
+    
+                
+                <div class="section-div">
+    
+                    <p class="heading"> Assignment on</p><br>
+                    <p class="tittle">Express JS</p><br>
+                    <p>Submission deadline: <strong> 11-july 8:00 pm</strong></p>
+                    <p>Total Marks : <strong>20</strong> </p><br><br>
+    
+                    <hr>
+                    <br>
+    
+                    <button class="Container-btn">Download Assignment</button>
+                    <button class="Container-btn">Upload Assignment</button>
+    
+                </div>
+
+            </div>
+            
+            <div class="right-div">
+
+                <div class="ideas">
+
+                    <p> <strong> About classroom </strong></p><br><hr><br>
+                    <p>This is some information about classroom</p>
+
+                </div>
+
+                <div class="profile-container">
+
+
+                    <div class="profiles">
+                   
+                        <a href="#">
+                        <img src="db.jpg" alt="profile"> 
+                        <span>Aman</span><br>
+                        <p>This is my profile.</p></a>
+                    
+                    </div>
+    
+                    <div class="profiles">
+                        <a href="#">
+                        <img src="db.jpg" alt="profile"> 
+                        <span>Sanjay</span><br>
+                        <p>This is my profile.</p></a>
+                    
+                    </div>
+    
+                    <div class="profiles">
+                        <a href="#">
+                        <img src="db.jpg" alt="profile"> 
+                        <span>Indra</span><br>
+                        <p>This is my profile.</p></a>
+                    
+                    </div>
+    
+                    <div class="profiles">
+                        <a href="#">
+                        <img src="db.jpg" alt="profile">
+                        <span>Alisha</span><br>
+                        <p>This is my profile.</p></a>
+                    
+                    </div>
+
+                    <div class="profiles">
+                        <a href="#">
+                        <img src="db.jpg" alt="profile">
+                        <span>Alisha</span><br>
+                        <p>This is my profile.</p></a>
+                    
+                    </div>
+
+                 
+                </div>
+
+               
+
+
+
+            </div>
+
+            
+
+        </div>
+       
+            
+    </section>
+
+    <script type="text/javascript">
+
+        var value = $("#left-div").html();
+
+        $(".click").click(function(){
+            alert("Click on 'Assignment' and 'Tests' nav buttons")
+        })
+
+        $("#Assignments").click(function(){        
+
+            $(".left-div").fadeOut(500);
+
+            $.get('text.txt', function(data){
+                
+                $("#left-div").fadeIn(500);
+                setTimeout(function(){
+                    $("#left-div").html(data);
+                 }, 500);
+               
+
+        });
+
+            
+        })
+
+        $("#Tests").click(function(){
+
+            $(".left-div").fadeOut(500);
+
+            $("#left-div").fadeIn(500);
+                        setTimeout(function(){
+                            $("#left-div").html(value);
+                        }, 500);
+
+            
+        })
+       
+
+
+    </script>
+
+   
+</body>
+</html>
